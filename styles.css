@@ -700,3 +700,122 @@ form button:hover {
     display: none;
   }
 }
+
+.hero-image img {
+  max-width: 70%;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+.btn {
+  background-color: #ef767a;
+  color: #fff;
+  padding: 10px 20px;
+  border: #23f0c7;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: "Sour Gummy";
+  cursor: url("assets/hand-pointer.png"), auto;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #ff8a8e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav .logo {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav .logo {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav .logo {
+    font-size: 2.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav .logo {
+    font-size: 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 40px 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+  }
+}
+
+/* Existing media query */
+@media screen and (max-width: 768px) {
+  /* Your existing styles for max-width 768px */
+}
