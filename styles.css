@@ -543,7 +543,17 @@ form button:hover {
   margin-top: 20px;
   font-size: 0.9rem;
 }
-
+.hero-section,
+.flavors-section,
+.ordering-guide,
+.why-choose-us,
+.customer-reviews,
+.cta,
+footer {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Media queries */
 
 @media screen and (max-width: 768px) {
@@ -647,7 +657,9 @@ form button:hover {
       max-width: 70%;
       height: auto;
     }
-
+    .wave-divider2 {
+      display: none;
+    }
     .why-choose-us {
       flex-direction: column;
       padding: 50px 10px;
@@ -685,7 +697,17 @@ form button:hover {
       max-width: 200px;
       transform: rotate(90deg);
     }
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
 
+    ::-webkit-scrollbar-thumb {
+      background-color: #ef767a;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #23f0c7;
+    }
     .footer-container {
       flex-direction: column;
       align-items: center;
@@ -728,7 +750,17 @@ form button:hover {
   nav .logo {
     font-size: 2rem;
   }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ef767a;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #23f0c7;
+  }
   .hero-content h1 {
     font-size: 3rem;
   }
@@ -751,7 +783,17 @@ form button:hover {
   .hero-content h1 {
     font-size: 3.5rem;
   }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ef767a;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #23f0c7;
+  }
   .hero-content p {
     font-size: 1.2rem;
   }
@@ -770,7 +812,17 @@ form button:hover {
   .hero-content p {
     font-size: 1.3rem;
   }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ef767a;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #23f0c7;
+  }
   .btn {
     font-size: 1.1rem;
   }
@@ -785,7 +837,17 @@ form button:hover {
   .hero-content h1 {
     font-size: 4.5rem;
   }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ef767a;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #23f0c7;
+  }
   .hero-content p {
     font-size: 1.4rem;
   }
@@ -800,7 +862,17 @@ form button:hover {
   .hero-content h1 {
     font-size: 5rem;
   }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ef767a;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #23f0c7;
+  }
   .hero-content p {
     font-size: 1.5rem;
   }
