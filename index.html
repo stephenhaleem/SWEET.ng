@@ -30,13 +30,10 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#features">My Orders</a></li>
+        <li><a href="products.html">Our Products</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="cart-icon">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="cart-count" style="font-family: 'Sour Gummy'">0</span>
-      </div>
+
       <div class="menu-icon">
         <i class="fas fa-bars"></i>
       </div>
@@ -52,7 +49,7 @@
           believe in creating a taste experience that will make you feel
           special. Enjoy our amazing products!
         </p>
-        <button class="btn">BUY NOW</button>
+        <a href="products.html" class="btn">BUY NOW</a>
       </div>
       <div class="hero-image">
         <img src="images/Sorvete 🍦.png" alt="Ice Cream" />
@@ -153,7 +150,7 @@
       <div class="cta-text">
         <h2>Don't Miss Out on Our Valentines Sweet Deals!</h2>
         <p>Order your favorite flavors now and enjoy fast delivery.</p>
-        <a href="#" class="cta-btn">Order Now</a>
+        <a href="products.html" class="cta-btn">Order Now</a>
       </div>
       <div class="cta-image">
         <img
@@ -162,6 +159,14 @@
         />
       </div>
     </section>
+    <form class="contact-form">
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
     <div class="wave-divider1">
       <img src="assets/wave.svg" alt="wave-divider" />
     </div>
@@ -200,6 +205,7 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 

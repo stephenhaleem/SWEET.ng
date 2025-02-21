@@ -15,7 +15,6 @@ body {
 }
 
 nav {
-  font-family: "Exo 2";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,19 +62,6 @@ nav ul li a:hover {
   color: #ef767a;
   font-size: 2rem;
 }
-.cart-icon {
-  font-size: 20px;
-  color: #ef767a;
-  cursor: url("assets/hand-pointer.png"), auto;
-  margin-left: 20px;
-}
-.cart-icon i {
-  transition: transform 0.2s ease-in-out;
-}
-
-.cart-icon:hover i {
-  transform: scale(1.2);
-}
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -112,6 +98,7 @@ p {
   text-align: left;
 }
 .hero-content h1 {
+  z-index: 1;
   font-family: "DynaPuff";
   font-size: 4.5rem;
   color: #ef767a;
@@ -126,6 +113,7 @@ p {
 }
 
 .hero-content p {
+  z-index: 1;
   font-family: "Sour Gummy";
   font-size: 1.5rem;
   color: #ef767a;
@@ -133,17 +121,20 @@ p {
 }
 
 .hero-image {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-image img {
+  z-index: 1;
   max-width: 70%;
   height: auto;
   animation: float 3s ease-in-out infinite;
 }
 .btn {
+  z-index: 1;
   background-color: #ef767a;
   color: #fff;
   padding: 10px 20px;
@@ -161,6 +152,7 @@ p {
   background-color: #ff8a8e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -418,7 +410,40 @@ p {
   max-width: 290px;
   border-radius: 10px;
 }
+.contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background: #ef767a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: url("assets/hand-pointer.png"), auto;
+}
+
+.contact-form button:hover {
+  background: #e63950;
+}
 .wave-divider {
   width: 100%;
   overflow: hidden;
@@ -505,6 +530,12 @@ footer {
 .social-icons img:hover {
   transform: scale(1.1);
 }
+form h2 {
+  font-family: "DynaPuff";
+  font-size: 2.5rem;
+  color: #ff4d6d;
+  margin-bottom: 20px;
+}
 
 form {
   display: flex;
@@ -570,6 +601,7 @@ footer {
     top: 40px;
     right: 0;
     background-color: #23f0c7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     text-align: center;
   }

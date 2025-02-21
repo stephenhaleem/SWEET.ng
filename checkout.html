@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#23f0c7" />
+    <meta name="msapplication-navbutton-color" content="#23f0c7" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#23f0c7" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <h2>Checkout</h2>
+      <div id="checkout-summary">
+        <p>Total: <span id="checkout-total">₦0</span></p>
+        <label for="location">Select your location:</label>
+        <select id="location" onchange="updateTotalWithDelivery()">
+          <option value="lagos">Lagos</option>
+          <option value="abuja">Abuja</option>
+          <option value="other">Other</option>
+        </select>
+        <p>Delivery Cost: <span id="delivery-cost">₦0</span></p>
+        <p>Grand Total: <span id="grand-total">₦0</span></p>
+      </div>
+      <button onclick="proceedToPayment()">Proceed to Payment</button>
+      <script src="checkout.js"></script>
+    </div>
+  </body>
+</html>

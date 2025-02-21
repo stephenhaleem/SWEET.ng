@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#23f0c7" />
+    <meta name="msapplication-navbutton-color" content="#23f0c7" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#23f0c7" />
+    <title>Our Flavors</title>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="color: #ef767a; text-decoration: none"
+          >SWEET.ng</a
+        >
+      </div>
+
+      <div class="cart-icon" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" style="font-family: 'Sour Gummy'">0</span>
+      </div>
+
+      <!-- Sidebar Cart -->
+      <div class="cart-sidebar" id="cartSidebar">
+        <span class="close-cart" onclick="toggleCart()">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <p>Total: <span id="cart-total-price">₦0</span></p>
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+    </nav>
+
+    <h2>Choose Your Flavors</h2>
+
+    <div class="product-grid">
+      <div class="product" data-id="1" data-name="Vanilla" data-price="1000">
+        <img src="images/vanilla1.jpeg" alt="Vanilla Ice Cream" />
+        <h3>Vanilla</h3>
+        <p>₦1000</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" data-id="2" data-name="Chocolate" data-price="1200">
+        <img src="images/choco1.jpeg" alt="Chocolate Ice Cream" />
+        <h3>Chocolate</h3>
+        <p>₦1200</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" data-id="3" data-name="Strawberry" data-price="1100">
+        <img
+          src="images/strawberry ice cream__ strawberry__ homemade ice cream__ ice cream recipe__ red ice cream.jpeg"
+          alt="Strawberry Ice Cream"
+        />
+        <h3>Strawberry</h3>
+        <p>₦1100</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" data-id="4" data-name="Mango" data-price="1300">
+        <img src="images/mango.jpeg" alt="Mango Ice Cream" />
+        <h3>Mango</h3>
+        <p>₦1300</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <h2>For Kids</h2>
+    <div class="product-grid">
+      <div class="product" data-id="5" data-name="Rocky Road" data-price="700">
+        <img
+          src="images/Rocky Road Ice Cream.jpeg"
+          alt="Rocky Road Ice Cream"
+        />
+        <h3>Rocky Road</h3>
+        <p>₦700</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product" data-id="6" data-name="Rocky Road" data-price="700">
+        <img
+          src="images/Rocky Road Ice Cream.jpeg"
+          alt="Rocky Road Ice Cream"
+        />
+        <h3>Rocky Road</h3>
+        <p>₦700</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product" data-id="7" data-name="Rocky Road" data-price="700">
+        <img
+          src="images/Rocky Road Ice Cream.jpeg"
+          alt="Rocky Road Ice Cream"
+        />
+        <h3>Rocky Road</h3>
+        <p>₦700</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product" data-id="8" data-name="Rocky Road" data-price="700">
+        <img
+          src="images/Rocky Road Ice Cream.jpeg"
+          alt="Rocky Road Ice Cream"
+        />
+        <h3>Rocky Road</h3>
+        <p>₦700</p>
+        <button onclick="addToCart(this)" class="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
