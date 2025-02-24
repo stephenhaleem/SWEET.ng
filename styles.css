@@ -50,6 +50,7 @@ nav ul li a {
   padding: 5px 10px;
   transition: all 0.3s ease;
   font-family: "Sour Gummy";
+  cursor: url("assets/hand-pointer.png"), auto;
 }
 
 nav ul li a:hover {
@@ -245,6 +246,7 @@ p {
   text-align: center;
   border-radius: 15px;
   height: 100vh;
+  overflow: hidden;
 }
 
 .ordering-guide h2 {
@@ -542,6 +544,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 form input {
@@ -955,5 +958,106 @@ footer {
     font-size: 1.2rem; /* Reduce navigation link font size */
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
 
-/* Existing media queries... */
+  .hero-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 1.7rem;
+    padding-top: 10px;
+    padding: 10px 30px;
+  }
+  .hero-image img {
+    max-width: 70%;
+  }
+
+  .flavors-section h2 {
+    font-size: 3rem;
+  }
+
+  .owl-carousel .flavor {
+    min-height: 250px;
+  }
+
+  .ordering-guide {
+    padding: 60px 20px;
+  }
+
+  .ordering-guide h2 {
+    font-size: 3.5rem;
+  }
+
+  .steps {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .step {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .why-choose-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .why-choose-us img {
+    margin-bottom: 30px;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cta h2 {
+    font-size: 3rem;
+  }
+  .cta p {
+    font-size: 1.7rem;
+  }
+  .cta-btn {
+    font-size: 1.8rem;
+    padding: 15px 30px;
+  }
+  .cta img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 30px;
+  }
+}

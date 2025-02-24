@@ -6,7 +6,13 @@
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url("assets/arrowhead1.png"), auto;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -103,22 +109,23 @@ p {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   color: #ef767a;
+  cursor: url("assets/hand-pointer.png"), auto;
 }
 .cart-item .quantity-btn {
-  width: 30px; /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
-  font-size: 16px; /* Adjust the font size as needed */
-  background-color: #ef767a; /* Match the existing button color */
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background-color: #ef767a;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  margin: 0 5px; /* Add some margin for spacing */
+  cursor: url("assets/hand-pointer.png"), auto;
+  margin: 0 5px;
 }
 
 .cart-item button:not(.quantity-btn) {
-  width: auto; /* Allow the remove button to have its default width */
-  padding: 5px 10px; /* Adjust padding for the remove button */
+  width: auto;
+  padding: 5px 10px;
 }
 
 button {
@@ -132,6 +139,7 @@ button {
   cursor: pointer;
   width: 100%;
   margin-top: 10px;
+  cursor: url("assets/hand-pointer.png"), auto;
 }
 h2 {
   padding-top: 50px;
@@ -188,7 +196,7 @@ h2 {
   border: none;
   padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: url("assets/hand-pointer.png"), auto;
   width: 100%;
 }
 
